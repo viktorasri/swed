@@ -1,0 +1,50 @@
+footer{
+
+  color: $text-color;
+  background-color: #fbf2ea;
+  font-size: 1.3rem;
+
+  &:before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: linear-gradient(to right,$color-primary-orange ,$color-primary-yellow )
+  }
+
+  .row{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+
+    @include mobile{
+      flex-wrap: wrap;
+    }
+  }
+  nav{
+    @include mobile{
+      display: block;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+  .social{
+    @include mobile{
+      display: block;
+      width: 100%;
+    }
+  }
+  li{
+    display: inline-block;
+    cursor: pointer;
+  }
+  nav li{
+    margin-right: 1rem;
+  }
+  .social li{
+    margin-left: 1rem;
+  }
+  p{
+    display: inline-block;
+    margin: 1rem auto 0 auto;
+  }
+}

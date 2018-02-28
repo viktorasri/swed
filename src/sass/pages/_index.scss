@@ -1,0 +1,179 @@
+.main {
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+
+.small-loan {
+  border-radius: 5px;
+  width: 100%;
+  flex: 1;
+
+
+  &__head {
+    padding: 1rem 0;
+
+    &__breadcrumb {
+      margin-left: 2rem;
+    }
+  }
+
+  &__starter {
+    border-radius: 5px;
+    background-color: $color-white;
+    padding: 3rem 2rem;
+    margin-bottom: 4rem;
+
+    &__img-container {
+      @include clearfix;
+      width: 20%;
+      float: right;
+      margin-left: 2rem;
+
+
+
+      img {
+        width: 100%;
+
+      }
+    }
+
+    .btn--orange {
+      margin-top: 3rem;
+    }
+  }
+
+  &__results {
+    background-color: $color-white;
+    padding: 2rem;
+    display: none;
+    margin-bottom: 4rem;
+
+    .print-out {
+      padding: 2rem 3rem;
+    }
+
+    &__list {
+      padding-bottom: 3rem;
+    }
+
+    &__items {
+      padding: .5rem 0;
+      color: $text-color;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+    }
+
+    &__key {
+      width: 25rem;
+      margin-right: 1.5rem;
+      text-align: right;
+      display: inline-block;
+
+    }
+
+    &__value {
+      width: 40%;
+      text-align: left;
+      display: inline-block;
+
+    }
+  }
+
+
+
+  &__features-list{
+    color: $text-color;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+
+    li {
+      padding: .5rem 0;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        height: 1.3rem;
+        width: .7rem;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        background-color: $color-primary-orange;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__form {
+    background-color: $color-white;
+    display: none;
+    margin-bottom: 4rem;
+    overflow: hidden;
+
+
+    &__step {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5rem 2rem;
+
+      dt {
+        width: 35%;
+        text-align: right;
+        font-size: 1.3rem;
+        line-height: 3.4rem;
+        padding: 1rem 0;
+
+        .required {
+          color: $color-primary-orange;
+          margin: 0 .5rem 0 .3rem
+        }
+      }
+
+      dd {
+        width: 65%;
+        padding: 1rem 0;
+
+        select,
+        input {
+          height: 3.4rem;
+          line-height: 3.4rem;
+          font-size: 1.3rem;
+          padding: 0 1.5rem;
+          border-radius: 3px;
+          border: 1px solid $color-input-border;
+          background: $color-input-background;
+        }
+
+        textarea {
+          border: 1px solid $color-input-border;
+          background-color: $color-white;
+          font-size: 1.3rem;
+          padding: 1rem;
+          max-width: 70%;
+          width: 70%;
+          margin-right: 30%;
+          border-radius: 3px;
+        }
+      }
+    }
+
+    &__radio-group {
+      display: inline-block;
+      line-height: 3.4rem;
+      margin-right: 2rem;
+    }
+  }
+
+  #total-income {
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 3.4rem;
+    width: 12rem;
+  }
+}
+
+

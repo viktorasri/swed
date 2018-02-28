@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="SwedBank app">
+    <meta name="author" content="Viktoras Rimkus">
+    <link rel="shortcut icon" href="img/logo-small.png" type="image/x-icon">
+    <title>Credit line &dot; Swedbank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+<header class="header">
+    <div class="row">
+        <div class="header__logo">
+            <img src="img/swedbank-logo.png" alt="Full logo">
+        </div>
+
+        <div class="header__cta">
+            <a href="tel:1884"><i class="ion-android-phone-portrait header__cta--contact"></i></a>
+            <a href="mailto:info@swedbank.com"><i class="ion-email header__cta--contact"></i></a>
+            <a href="#"><i class="fa fa-sign-in header__cta--login"></i> Log In</a>
+        </div>
+    </div>
+    <nav class="header__nav">
+        <div class="row">
+            <ul class="header__nav--left">
+                <li><i class="fa fa-bars"></i></li>
+                <li><a href="#">Private clients</a></li>
+                <li><a href="#">Corporate clients</a></li>
+            </ul>
+
+            <div class="header__nav--right">
+                <ul class="header__nav__lang">
+                    <li>LT</li>
+                    <li>EN</li>
+                </ul>
+                <input class="header__nav__search" type="text" placeholder="search">
+            </div>
+        </div>
+    </nav>
+
+</header>
+<main class="main">
+    <div class="row">
+
+        <section class="small-loan">
+            <div class="small-loan__head">
+                <div class="small-loan__head__breadcrumb">Home > Loan, leasing, credit card > Credit line</div>
+                <h1 class="heading-main">Credit line</h1>
+            </div>
+
+            <div class="small-loan__starter">
+                <div class="small-loan__starter__img-container">
+                    <img src="img/loan_starter.png" alt="Small loan">
+                </div>
+                <h2 class="heading-secondary">Curious how much the bank could lend you?</h2>
+                <p class="paragraph">
+                    Find an offer. Log into the internet or mobile bank and see if you have a pre-calculated personal offer there. If there is on, you can enter into an agreement without submitting an application.
+                </p>
+                <p class="paragraph">
+                    Submit an application. If there are no offers, please submit an application. We recommend doing this on the mobile bank, since you get the answer within 20 minutes (Mon–Fri 09:00–17:00).
+                </p>
+
+                <ul class="small-loan__features-list">
+                    <li>The money will be transferred to your account right away.</li>
+                    <li>You can make early repayments.</li>
+                    <li>No collateral is required</li>
+                </ul>
+                <div class="btn btn--orange" id="cta-loan">Fill in Loan application</div>
+            </div>
+
+
+
+
+
+            <form class="small-loan__form">
+                <div class="progress-bar">
+                    <div class="progress-bar__h-line"><div class="progress-bar__h-line--filler"></div></div>
+                    <span class="progress-bar__item progress-bar__item--1">1</span>
+                    <span class="progress-bar__item progress-bar__item--2">2</span>
+                    <span class="progress-bar__item progress-bar__item--3">3</span>
+                    <span class="progress-bar__item progress-bar__item--4">4</span>
+                    <span class="progress-bar__item progress-bar__item--5">5</span>
+                </div>
+                <dl class="small-loan__form__step">
+                    <dt><label for="credit_type">Credit type<span class="required">*</span></label></dt>
+                    <dd>
+                        <select name="" id="credit_type">
+                            <option value=""></option>
+                            <option value="personal_credit">Personal credit</option>
+                            <option value="familyHh_credit">Family/household credit</option>
+                        </select>
+                    </dd>
+                    <dt><label for="loan_amount">Loan amount<span class="required">*</span></label></dt>
+                    <dd>
+                        <input id="loan_amount" type="number" maxlength="6">
+                    </dd>
+                    <dt><label for="loan_term">Loan term<span class="required">*</span></label></dt>
+                    <dd>
+                        <select name="" id="loan_term">
+                            <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <span class="tooltip">?
+                            <span class="tooltiptext">Please indicate the liabilities that have not been financed by Swedbank</span>
+                        </span>
+                    </dd>
+                    <div class="u-align-spacebtw u-marginTop-big">
+                        <div class="btn btn--back js-back"><< Back</div>
+                        <div class="btn btn--orange" id="application-forward">Forward >></div>
+                    </div>
+                </dl>
+
+                <dl class="small-loan__form__step">
+                    <dt><label for="fname">First name<span class="required">*</span></label></dt>
+                    <dd>
+                        <input id="fname" type="text">
+                    </dd>
+                    <dt><label for="lname">Last name<span class="required">*</span></label></dt>
+                    <dd>
+                        <input id="lname" type="text">
+                    </dd>
+                    <dt>Gender<span class="required">*</span></dt>
+                    <dd>
+                        <div class="small-loan__form__radio-group">
+                            <input type="radio" class="radio-input" value="male" id="male" name="gender">
+                            <label for="male" class="radio-label">
+                                <span class="radio-button"></span>
+                                Male
+                            </label>
+                        </div>
+                        <div class="small-loan__form__radio-group">
+                            <input type="radio" class="radio-input" value="female" id="female" name="gender">
+                            <label for="female" class="radio-label">
+                                <span class="radio-button"></span>
+                                Female
+                            </label>
+                        </div>
+                        <div class="small-loan__form__radio-group">
+                            <input type="radio" class="radio-input" value="other" id="other" name="gender">
+                            <label for="other" class="radio-label">
+                                <span class="radio-button"></span>
+                                Other
+                            </label>
+                        </div>
+                    </dd>
+                    <dt><label for="docNo">Document number<span class="required">*</span></label></dt>
+                    <dd>
+                        <input id="docNo" type="text">
+                    </dd>
+                    <div class="u-align-spacebtw u-marginTop-big">
+                        <div class="btn btn--back js-back"><< Back</div>
+                        <div class="btn btn--orange" id="contacts-forward">Forward >></div>
+                    </div>
+                </dl>
+
+
+                <div class="small-loan__form__step">
+                    <div class="table">
+                        <ul class="table__head">
+                            <li class="table__col table__col--1"><label for="obligation-type">Type of obligation</label></li>
+                            <li class="table__col table__col--2"><label for="obligation-financer">Obligation financer</label></li>
+                            <li class="table__col table__col--3"><label for="obligation-term">Term (year)</label></li>
+                            <li class="table__col table__col--4"><label for="obligation-amount">Amount/limit</label></li>
+                            <li class="table__col table__col--5"><label for="obligation-monthly-payement">Monthly payment</label></li>
+                        </ul>
+                        <ul class="table__body">
+                            <li class="table__col table__col--1">
+                                <select name="" id="obligation-type">
+                                    <option value=""></option>
+                                    <option value="home_loan">Home loan</option>
+                                    <option value="consumer_loan">Consumer loan</option>
+                                    <option value="car_lease">Car lease</option>
+                                </select>
+                            </li>
+                            <li class="table__col table__col--2">
+                                <select name="" id="obligation-financer">
+                                    <option value=""></option>
+                                    <option value="luminor">Luminor</option>
+                                    <option value="seb">SEB</option>
+                                    <option value="fast_credit">Fast credit</option>
+                                </select>
+                            </li>
+                            <li class="table__col table__col--3">
+                                <input type="number" id="obligation-term">
+                            </li>
+                            <li class="table__col table__col--4">
+                                <input type="number" id="obligation-amount" placeholder="EUR">
+                            </li>
+                            <li class="table__col table__col--5">
+                                <input type="number" id="obligation-monthly-payement" placeholder="EUR">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="u-align-spacebtw u-marginTop-big">
+                        <div class="btn btn--back js-back"><< Back</div>
+                        <div class="btn btn--orange" id="obligation-forward">Forward >></div>
+                    </div>
+                </div>
+
+                <dl class="small-loan__form__step">
+
+                    <dt><label for="salary">Net salary<span class="required">*</span></label></dt>
+                    <dd>
+                        <input class="js-allIncomes" id="salary" type="number" min="0" max="1000000" maxlength="6" placeholder="EUR">
+                    </dd>
+                    <dt><label for="income-other">Other incomes<span class="required">&nbsp;</span></label></dt>
+                    <dd>
+                        <input class="js-allIncomes" id="income-other" type="number" min="0" max="1000000" maxlength="6" placeholder="EUR" >
+                    </dd>
+                    <dt>Total income:<span class="required">&nbsp;</span></dt>
+                    <dd><div id="total-income"></div></dd>
+
+                    <dt></dt>
+                    <dd>
+                        <div class="small-loan__form__checkbox-group">
+                            <input type="checkbox" class="checkbox-input" value="selfempl" id="selfEmployer" name="selfEmployer">
+                            <label for="selfEmployer" class="checkbox-label">
+                                <span class="checkbox-button"></span>
+                                I am a private entrepreneur
+                            </label>
+                        </div>
+                    </dd>
+                    <div class="u-align-spacebtw u-marginTop-big">
+                        <div class="btn btn--back js-back"><< Back</div>
+                        <div class="btn btn--orange" id="income-forward">Forward >></div>
+                    </div>
+                </dl>
+
+                <dl class="small-loan__form__step">
+                    <dt><label for="additional-info">Additional information<span class="required">&nbsp;</span></label></dt>
+                    <dd>
+                        <textarea name="additional-info" id="additional-info" cols="30" rows="10"></textarea>
+                    </dd>
+                    <div class="u-align-spacebtw u-marginTop-big">
+                        <div class="btn btn--back js-back"><< Back</div>
+                        <div class="btn btn--orange" id="confirm">Confirm Form</div>
+                    </div>
+                </dl>
+            </form>
+
+            <div class="small-loan__results">
+
+                <h2 class="heading-secondary">Your loan application</h2>
+                <p class="paragraph">
+                    Submit an application. If there are no offers, please submit an application. We recommend doing this on the mobile bank, since you get the answer within 20 minutes (Mon–Fri 09:00–17:00).
+                </p>
+                <div class="print-out"></div>
+
+
+            </div>
+
+        </section>
+    </div>
+
+</main>
+<footer>
+    <div class="row">
+        <nav>
+            <ul>
+                <li>About</li>
+                <li>Contact Us</li>
+                <li>Our Team</li>
+                <li>We love You</li>
+            </ul>
+        </nav>
+        <ul class="social">
+            <li><i class="fa fa-facebook-f"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-instagram"></i></li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
+    </div>
+</footer>
+
+<script src="js/bundle.min.js"></script>
+</body>
+</html>
